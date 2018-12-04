@@ -221,6 +221,7 @@ class BTgymBaseData:
         self.test_range_delta = None
         self.train_range_delta = None
         self.test_num_records = 0
+        self.max_gap_num_records = 0
         self.train_num_records = 0
         self.total_num_records = 0
         self.train_interval = [0, 0]
