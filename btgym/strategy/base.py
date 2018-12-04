@@ -329,7 +329,7 @@ class BTgymBaseStrategy(bt.Strategy):
         self.collection_get_state_methods = {}
         for key in self.p.state_shape.keys():
             try:
-                self.collection_get_state_methods[key] = getattr(self, 'get_{}_state'.format(key))
+                self.collection_get_state_methods[key] = getattr(self, 'get_{}'.format(key))
 
             except AttributeError:
                 raise NotImplementedError('Callable get_{}_state.() not found'.format(key))

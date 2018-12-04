@@ -801,7 +801,7 @@ class BTgymEnv(gym.Env):
                 self._closed,
                 not self.socket or self.socket.closed,
             )
-            self.log.exception(msg)
+            self.log.info(msg)
             raise AssertionError(msg)
 
         # Send action (as dict of strings) to backtrader engine, receive environment response:
